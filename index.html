@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
 <head>
 	<title>celebrate</title>
 	<style>
 		@font-face {
 			font-family: "Areal";
-			src: url("fonts/Areal.ttf") format("truetype");
+			src: url("fonts/Arealslant.ttf") format("truetype");
 		}
+		
 		#celebrate {
 			color: #C3D350;
+			font-family: "Areal";
 			background-color: #f68bbe;
 			font-size: 6em;
 			border: #efd79d;
 			border-radius: 60%;
-			padding-top: 20px;
-			padding-bottom: 20px;
+			padding-top: 60px;
+			padding-bottom: 50px;
 			padding-left: 20px;
 			padding-right: 20px;
 			letter-spacing: 6px;
@@ -28,6 +30,12 @@
 			-webkit-text-stroke: 1.5px #564592;
 		}
 
+		#celebrate:hover {
+			color: #41D0E1;
+			background-color: #F08368;
+			transition-duration: 0.1s;
+		}
+
 		html,
 		body {
 			margin: 0;
@@ -36,7 +44,6 @@
 			min-height: 100vh;
 			overflow: hidden;
     		touch-action: manipulation;
-			font-family: "Areal";
 			}
 
 		body {
@@ -58,12 +65,19 @@
 			font-size: 2em;
 			border: #efd79d;
 			border-radius: 20%;
-			padding-top: 0px;
+			padding-top: 2px;
 			padding-bottom: 0px;
 			padding-left: 2px;
 			padding-right: 2px;
 			cursor: pointer;
 			-webkit-text-stroke: 1.5px #564592;
+			font-family: Helvetica;
+		}
+
+		#help:hover {
+			color: #41D0E1;
+			background-color: #F08368;
+			transition-duration: 0.1s;
 		}
 		.modal {
 			display: none;
@@ -84,6 +98,7 @@
 			box-sizing: border-box;
 			color: #564592;
 			font-size: 1em;
+			font-family: Helvetica;
 		}
 
 		.close {
@@ -122,6 +137,11 @@
 			vertical-align: middle;
 			cursor: pointer;
 			-webkit-text-stroke: 1px #564592;
+		}
+		#celebrate:hover {
+			color: #41D0E1;
+			background-color: #F08368;
+			transition: 
 		}
 		
 		button {
@@ -170,6 +190,7 @@
 			padding-right: 2px;
 			cursor: pointer;
 			-webkit-text-stroke: 1.5px #564592;
+			font-family: "arealnormal";
 		}
 		.modal {
 			display: none;
@@ -190,6 +211,7 @@
 			box-sizing: border-box;
 			color: #564592;
 			font-size: 1em;
+			font-family: "arealnormal";
 		}
 
 		.close {
