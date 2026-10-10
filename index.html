@@ -126,10 +126,19 @@
 			cursor: pointer;
 			-webkit-text-stroke: 1px #564592;
 		}
-		#celebrate:hover {
-			color: #41D0E1;
-			background-color: #F08368;
+		
+		button {
+			-webkit-tap-highlight-color: transparent;
 		}
+		button:active {
+			box-shadow:none;
+		}
+
+		button:focus, input:focus {
+  		outline: none; 
+  		box-shadow: none; 
+		}
+
 		html,
 		body {
 			margin: 0;
@@ -138,6 +147,7 @@
 			min-height: 100vh;
 			overflow: hidden;
 		}
+		
 		body {
 			display: flex;
 			align-items: center;
