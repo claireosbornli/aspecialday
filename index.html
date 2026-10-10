@@ -29,16 +29,6 @@
 			cursor: pointer;
 			-webkit-text-stroke: 1.5px #564592;
 		}
-
-		#celebrate:hover {
-			color: #41D0E1;
-			background-color: #F08368;
-			transition-duration: 0.1s;
-		}
-
-		#celebrate:focus {
-    	background-color:#f68bbe;
-		}
 		
 
 		html,
@@ -141,11 +131,6 @@
 			vertical-align: middle;
 			cursor: pointer;
 			-webkit-text-stroke: 1px #564592;
-		}
-		#celebrate:hover {
-			color: #41D0E1;
-			background-color: #F08368;
-			transition: 
 		}
 		
 		button {
@@ -331,7 +316,7 @@
 			"audio/sam_yayayayaya.m4a",
 			"audio/sam_yippee.m4a"
 		];
-
+// audio
 		function playRandomAudio() {
 			const audioIndex = Math.floor(Math.random() * audioArray.length);
 			const audio = new Audio(audioArray[audioIndex]);
@@ -339,7 +324,7 @@
 				console.log('Audio playback was blocked until the user interacted with the page.');
 			});
 		}
-
+//modal
 		var modal = document.getElementById("helpmodal");
 		var btn = document.getElementById("help");
 		var span = document.getElementsByClassName("close")[0];
@@ -359,6 +344,15 @@
 				hideHelp();
 			}
 		};
+
+// colours
+const selectedColors = ['#41D0E1', '#F08368', '#E77ABB', '#78BC61', '#9C95DC', '#F8F4A6', '#BFD7EA', '#7BDFF2', '#F26419', '#6CD4FF', '#D76A03' '#BF3100'];
+const button = document.getElementById('celebrate');
+button.addEventListener('click', () => {
+	const randomIndex = Math.floor(Math.random() * selectedColors.length);
+	const randomColor = selectedColors[randomIndex];
+	document.body.style.backgroundColor = randomColor; 
+});
 	</script>
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" width="0" height="0">
